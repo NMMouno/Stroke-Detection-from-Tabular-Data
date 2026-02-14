@@ -1,3 +1,50 @@
+# Trust-STROKE: Trustworthy Stroke Risk Prediction with Calibration, Uncertainty, and Robustness
+
+This repository contains the full implementation and experimental pipeline for **Trust-STROKE**, a trustworthy machine learning framework for reliable stroke risk prediction from tabular health data.
+
+Unlike conventional predictive models that focus only on discrimination performance, Trust-STROKE jointly evaluates **predictive accuracy, probabilistic calibration, epistemic uncertainty, robustness, clinical utility, and interpretability**, aiming to provide a clinically reliable and deployable risk prediction system.
+
+---
+
+## Overview
+
+Reliable clinical prediction requires more than accurate classification. A clinically useful model must:
+
+- Produce **calibrated probabilities**
+- Provide **meaningful uncertainty estimates**
+- Remain stable under **data variability and perturbations**
+- Offer **clinically interpretable risk stratification**
+- Demonstrate **decision-level clinical benefit**
+
+Trust-STROKE integrates these aspects into a unified framework and evaluates performance under realistic imbalanced conditions.
+
+---
+
+## Key Contributions
+
+- Unified trustworthy learning framework for stroke risk prediction
+- Calibration-aware probability estimation using temperature scaling
+- Ensemble-based epistemic uncertainty estimation
+- Reliability-centric evaluation beyond conventional metrics
+- Clinical utility assessment via decision curve analysis and risk stratification
+- Robustness evaluation under adversarial perturbations and missingness stress
+- Interpretability through global and local feature attribution
+- Comprehensive reproducible experimental pipeline
+
+---
+
+## Dataset
+
+This study uses a publicly available stroke risk prediction dataset:
+
+**Mendeley Data Repository**  
+https://data.mendeley.com/datasets/xggs239bnw/1  
+
+The dataset contains anonymized tabular health records and has been widely used for stroke risk prediction research.
+
+---
+
+## Main Notebook
 
 This notebook reproduces:
 
@@ -47,8 +94,6 @@ Additional notebooks in the repository provide intermediate experiments and exte
 - Global feature importance
 - Local explanation analysis
 - Clinically coherent risk drivers
-
----
 
 ## Repository Structure
 
